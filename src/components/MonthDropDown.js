@@ -18,7 +18,7 @@ function MonthDropDown({ setMonth, setBdays }) {
   return (
     <section>
       <label>Select bday month</label>
-      <select onChange={(e) => setMonth(e.target.value)}>
+      <select onChange={(event) => setMonth(event.target.value)}>
         {months.map((monthItem, index) => {
           return (
             <option value={monthItem} key={index}>
